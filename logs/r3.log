@@ -1,0 +1,219 @@
+Router 3 routing table
+destination  metric  next_hop  timeout_left  garbage_left
+3           0       -        -            -           
+
+Router 3 routing table
+destination  metric  next_hop  timeout_left  garbage_left
+3           0       -        -            -           
+
+Router 3 routing table
+destination  metric  next_hop  timeout_left  garbage_left
+2           1       2        12.0s        -           
+3           0       -        -            -           
+
+Router 3 routing table
+destination  metric  next_hop  timeout_left  garbage_left
+2           1       2        12.0s        -           
+3           0       -        -            -           
+4           1       4        12.0s        -           
+
+Router 3 routing table
+destination  metric  next_hop  timeout_left  garbage_left
+1           6       4        12.0s        -           
+2           1       2        10.0s        -           
+3           0       -        -            -           
+4           1       4        12.0s        -           
+
+Router 3 routing table
+destination  metric  next_hop  timeout_left  garbage_left
+1           2       2        12.0s        -           
+2           1       2        12.0s        -           
+3           0       -        -            -           
+4           1       4        12.0s        -           
+
+Router 3 routing table
+destination  metric  next_hop  timeout_left  garbage_left
+1           2       2        12.0s        -           
+2           1       2        12.0s        -           
+3           0       -        -            -           
+4           1       4        12.0s        -           
+
+Router 3 routing table
+destination  metric  next_hop  timeout_left  garbage_left
+1           2       2        10.0s        -           
+2           1       2        10.0s        -           
+3           0       -        -            -           
+4           1       4        10.0s        -           
+
+Router 3 routing table
+destination  metric  next_hop  timeout_left  garbage_left
+1           2       2        12.0s        -           
+2           1       2        12.0s        -           
+3           0       -        -            -           
+4           1       4        10.0s        -           
+
+Router 3 routing table
+destination  metric  next_hop  timeout_left  garbage_left
+1           2       2        12.0s        -           
+2           1       2        12.0s        -           
+3           0       -        -            -           
+4           1       4        12.0s        -           
+
+Router 3 routing table
+destination  metric  next_hop  timeout_left  garbage_left
+1           2       2        10.0s        -           
+2           1       2        10.0s        -           
+3           0       -        -            -           
+4           1       4        10.0s        -           
+
+Router 3 routing table
+destination  metric  next_hop  timeout_left  garbage_left
+1           2       2        10.0s        -           
+2           1       2        10.0s        -           
+3           0       -        -            -           
+4           1       4        12.0s        -           
+
+Router 3 routing table
+destination  metric  next_hop  timeout_left  garbage_left
+1           2       2        8.0s         -           
+2           1       2        8.0s         -           
+3           0       -        -            -           
+4           1       4        10.0s        -           
+
+Router 3 routing table
+destination  metric  next_hop  timeout_left  garbage_left
+1           2       2        6.0s         -           
+2           1       2        6.0s         -           
+3           0       -        -            -           
+4           1       4        10.0s        -           
+
+Router 3 routing table
+destination  metric  next_hop  timeout_left  garbage_left
+1           2       2        4.0s         -           
+2           1       2        4.0s         -           
+3           0       -        -            -           
+4           1       4        10.0s        -           
+
+Router 3 routing table
+destination  metric  next_hop  timeout_left  garbage_left
+1           2       2        2.0s         -           
+2           1       2        2.0s         -           
+3           0       -        -            -           
+4           1       4        12.0s        -           
+
+Router 3 routing table
+destination  metric  next_hop  timeout_left  garbage_left
+1           16      2        12.0s        8.0s        
+2           16      2        12.0s        8.0s        
+3           0       -        -            -           
+4           1       4        12.0s        -           
+
+Router 3 routing table
+destination  metric  next_hop  timeout_left  garbage_left
+1           16      2        12.0s        8.0s        
+2           16      2        12.0s        8.0s        
+3           0       -        -            -           
+4           1       4        12.0s        -           
+
+Router 3 routing table
+destination  metric  next_hop  timeout_left  garbage_left
+1           6       4        12.0s        -           
+2           16      2        12.0s        8.0s        
+3           0       -        -            -           
+4           1       4        12.0s        -           
+
+Router 3 routing table
+destination  metric  next_hop  timeout_left  garbage_left
+1           6       4        12.0s        -           
+2           16      2        10.0s        6.0s        
+3           0       -        -            -           
+4           1       4        12.0s        -           
+
+Router 3 routing table
+destination  metric  next_hop  timeout_left  garbage_left
+1           6       4        12.0s        -           
+2           16      2        8.0s         4.0s        
+3           0       -        -            -           
+4           1       4        12.0s        -           
+
+Router 3 routing table
+destination  metric  next_hop  timeout_left  garbage_left
+1           6       4        12.0s        -           
+2           16      2        6.0s         2.0s        
+3           0       -        -            -           
+4           1       4        12.0s        -           
+
+Router 3 routing table
+destination  metric  next_hop  timeout_left  garbage_left
+1           6       4        10.0s        -           
+3           0       -        -            -           
+4           1       4        10.0s        -           
+
+Router 3 routing table
+destination  metric  next_hop  timeout_left  garbage_left
+1           6       4        12.0s        -           
+3           0       -        -            -           
+4           1       4        12.0s        -           
+
+Router 3 routing table
+destination  metric  next_hop  timeout_left  garbage_left
+1           6       4        10.0s        -           
+3           0       -        -            -           
+4           1       4        10.0s        -           
+
+Router 3 routing table
+destination  metric  next_hop  timeout_left  garbage_left
+1           2       2        12.0s        -           
+2           1       2        12.0s        -           
+3           0       -        -            -           
+4           1       4        12.0s        -           
+
+Router 3 routing table
+destination  metric  next_hop  timeout_left  garbage_left
+1           2       2        10.0s        -           
+2           1       2        10.0s        -           
+3           0       -        -            -           
+4           1       4        12.0s        -           
+
+Router 3 routing table
+destination  metric  next_hop  timeout_left  garbage_left
+1           2       2        10.0s        -           
+2           1       2        10.0s        -           
+3           0       -        -            -           
+4           1       4        10.0s        -           
+
+Router 3 routing table
+destination  metric  next_hop  timeout_left  garbage_left
+1           2       2        10.0s        -           
+2           1       2        10.0s        -           
+3           0       -        -            -           
+4           1       4        12.0s        -           
+
+Router 3 routing table
+destination  metric  next_hop  timeout_left  garbage_left
+1           2       2        10.0s        -           
+2           1       2        10.0s        -           
+3           0       -        -            -           
+4           1       4        12.0s        -           
+
+Router 3 routing table
+destination  metric  next_hop  timeout_left  garbage_left
+1           2       2        10.0s        -           
+2           1       2        10.0s        -           
+3           0       -        -            -           
+4           1       4        12.0s        -           
+
+Router 3 routing table
+destination  metric  next_hop  timeout_left  garbage_left
+1           2       2        10.0s        -           
+2           1       2        10.0s        -           
+3           0       -        -            -           
+4           1       4        12.0s        -           
+
+Router 3 routing table
+destination  metric  next_hop  timeout_left  garbage_left
+1           2       2        10.0s        -           
+2           1       2        10.0s        -           
+3           0       -        -            -           
+4           1       4        10.0s        -           
+
