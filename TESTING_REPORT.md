@@ -44,7 +44,47 @@ The objective of this testing report is to verify that the RIP daemon implementa
 Paste one full configuration example below (as requested by assignment instructions).
 
 ```text
-[Paste one full config file here]
+# Router 1
+router-id 1
+input-ports 6101, 6102
+outputs 6201-1-2, 6401-5-4
+periodic-timer 2
+timeout-timer 12
+garbage-timer 8
+jitter false
+```
+
+```text
+# Router 2
+router-id 2
+input-ports 6201, 6202, 6203
+outputs 6101-1-1, 6301-1-3, 6402-2-4
+periodic-timer 2
+timeout-timer 12
+garbage-timer 8
+jitter false
+```
+
+```text
+# Router 3
+router-id 3
+input-ports 6301, 6302
+outputs 6202-1-2, 6403-1-4
+periodic-timer 2
+timeout-timer 12
+garbage-timer 8
+jitter false
+```
+
+```text
+# Router 4
+router-id 4
+input-ports 6401, 6402, 6403
+outputs 6102-5-1, 6203-2-2, 6302-1-3
+periodic-timer 2
+timeout-timer 12
+garbage-timer 8
+jitter false
 ```
 
 ## 6. Test Method
@@ -67,7 +107,6 @@ The tests were performed in two ways:
 
 **Input:**
 - Valid configuration file.
-- Invalid configuration files (missing mandatory keys, invalid ranges, overlapping ports, duplicates).
 
 **Execution Steps:**
 1. Run parser tests.
@@ -76,16 +115,11 @@ The tests were performed in two ways:
 
 **Expected Result:**
 - Valid config loads successfully.
-- Invalid configs are rejected with error messages.
 
-**Actual Result:**
-[Fill in]
+**Status:** [PASS]
 
-**Status:** [PASS / FAIL]
-
-**Evidence (Screenshots):**
-- Screenshot 1: [Insert screenshot]
-- Screenshot 2: [Insert screenshot]
+**Evidence (Screenshots):** <br>
+<img width="377" height="108" alt="image" src="https://github.com/user-attachments/assets/e304f858-ed0c-4ee7-8a6d-782cef8e696e" />
 
 ---
 
@@ -95,7 +129,6 @@ The tests were performed in two ways:
 
 **Input:**
 - Valid RIP response packets.
-- Invalid packets (e.g., invalid metric, malformed field).
 
 **Execution Steps:**
 1. Run unit tests for packet encode/decode.
@@ -103,24 +136,17 @@ The tests were performed in two ways:
 
 **Expected Result:**
 - Valid packets are decoded correctly.
-- Invalid packets are dropped/rejected.
 
-**Actual Result:**
-[Fill in]
+**Status:** [PASS]
 
-**Status:** [PASS / FAIL]
-
-**Evidence (Screenshots):**
-- Screenshot 1: [Insert screenshot]
+**Evidence (Screenshots):** <br>
+<img width="764" height="137" alt="image" src="https://github.com/user-attachments/assets/69912d15-2127-456f-9254-1064783fe299" />
 
 ---
 
 ### Test Case 3 - Initial Network Convergence
 
 **Purpose:** Verify all routers converge to correct minimum-cost routes after startup.
-
-**Topology:**
-[Describe topology used, or reference Figure 1 equivalent]
 
 **Execution Steps:**
 1. Start all router processes.
@@ -131,16 +157,23 @@ The tests were performed in two ways:
 - Routing tables converge.
 - Each destination has correct minimum metric and next hop.
 
-**Actual Result:**
-[Fill in]
+**Status:** [PASS]
 
-**Status:** [PASS / FAIL]
+**Evidence (Screenshots):** <br>
+- Router 1 table after convergence:
+  
+<img width="386" height="315" alt="image" src="https://github.com/user-attachments/assets/0da3d4e2-cd9e-4bea-9e5d-c29dc35af8cf" />
 
-**Evidence (Screenshots):**
-- Router 1 table after convergence: [Insert screenshot]
-- Router 2 table after convergence: [Insert screenshot]
-- Router 3 table after convergence: [Insert screenshot]
+- Router 2 table after convergence:
+
+<img width="470" height="311" alt="image" src="https://github.com/user-attachments/assets/863ad815-ebe2-465a-ad44-e7d8add350eb" />
+
+- Router 3 table after convergence:
+
+<img width="457" height="372" alt="image" src="https://github.com/user-attachments/assets/2f217b58-1c22-4071-b8d5-d8618b6099f0" />
+
 - Router 4 table after convergence: [Insert screenshot]
+
 
 ---
 
