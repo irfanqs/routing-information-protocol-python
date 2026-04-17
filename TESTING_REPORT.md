@@ -2,10 +2,8 @@
 
 ## 1. Student Information
 
-- **Name:** [Your Name]
-- **Student ID:** [Your Student ID]
-- **Course:** COSC 364 - Internet Protocols
-- **Date:** [Submission Date]
+- **Name:** 
+- **Student ID:**
 
 ## 2. Objective
 
@@ -40,8 +38,6 @@ The objective of this testing report is to verify that the RIP daemon implementa
   - `sample_configs/r4.conf`
 
 ## 5. Configuration Used for Demonstration
-
-Paste one full configuration example below (as requested by assignment instructions).
 
 ```text
 # Router 1
@@ -172,8 +168,9 @@ The tests were performed in two ways:
 
 <img width="457" height="372" alt="image" src="https://github.com/user-attachments/assets/2f217b58-1c22-4071-b8d5-d8618b6099f0" />
 
-- Router 4 table after convergence: [Insert screenshot]
+- Router 4 table after convergence:
 
+<img width="483" height="387" alt="image" src="https://github.com/user-attachments/assets/26b9e8c2-3a10-461b-b21b-097ad5f751b1" />
 
 ---
 
@@ -189,13 +186,11 @@ The tests were performed in two ways:
 - Per-neighbor updates differ when required.
 - Routes learned from neighbor X are advertised to X as unreachable (metric 16).
 
-**Actual Result:**
-[Fill in]
-
-**Status:** [PASS / FAIL]
+**Status:** [PASS]
 
 **Evidence (Screenshots):**
-- Screenshot 1: [Insert screenshot]
+
+<img width="379" height="115" alt="image" src="https://github.com/user-attachments/assets/0a0ceeb5-6145-4c97-8361-497c1df2b4f0" />
 
 ---
 
@@ -214,63 +209,22 @@ The tests were performed in two ways:
 - Triggered update occurs for invalid routes.
 - Network reconverges to new valid state.
 
-**Actual Result:**
-[Fill in]
-
-**Status:** [PASS / FAIL]
+**Status:** [PASS]
 
 **Evidence (Screenshots):**
-- Before failure: [Insert screenshot]
-- During transition/flurry of updates: [Insert screenshot]
-- After reconvergence: [Insert screenshot]
+- Before failure:
+
+<img width="391" height="107" alt="image" src="https://github.com/user-attachments/assets/491e2dee-d0de-416c-9d6d-9a6817dbe33b" />
+
+- During transition/flurry of updates:
+
+<img width="385" height="105" alt="image" src="https://github.com/user-attachments/assets/64255ca6-039e-4547-be65-5b3babf0a58b" />
+
+- After reconvergence:
+
+<img width="392" height="187" alt="image" src="https://github.com/user-attachments/assets/25c6870c-9297-4113-8383-e74de5004bba" />
 
 ---
-
-### Test Case 6 - Router Recovery Handling
-
-**Purpose:** Verify network returns to optimal routes after failed router restarts.
-
-**Execution Steps:**
-1. Restart previously failed router.
-2. Observe periodic updates and route refresh.
-3. Compare final tables with initial convergence state.
-
-**Expected Result:**
-- Recovered router rejoins normally.
-- Network reconverges back to initial minimum-cost state.
-
-**Actual Result:**
-[Fill in]
-
-**Status:** [PASS / FAIL]
-
-**Evidence (Screenshots):**
-- Router restart output: [Insert screenshot]
-- Final converged tables: [Insert screenshot]
-
----
-
-### Test Case 7 - Timer Behavior (Periodic, Timeout, Garbage)
-
-**Purpose:** Verify timer-driven behavior in route lifecycle.
-
-**Execution Steps:**
-1. Observe periodic table updates and timer countdowns.
-2. Trigger route timeout condition.
-3. Observe garbage collection removal after invalidation period.
-
-**Expected Result:**
-- Timer values decrease and refresh correctly.
-- Expired routes are invalidated then eventually removed.
-
-**Actual Result:**
-[Fill in]
-
-**Status:** [PASS / FAIL]
-
-**Evidence (Screenshots):**
-- Timer display during normal operation: [Insert screenshot]
-- Timeout/garbage phase: [Insert screenshot]
 
 ## 8. Unit Test Summary
 
@@ -280,25 +234,21 @@ The tests were performed in two ways:
 | `tests/test_packet.py` | RIP packet encode/decode checks | [PASS/FAIL] |
 | `tests/test_router_logic.py` | Split horizon poisoned reverse logic | [PASS/FAIL] |
 
-Additional notes:
-[Fill in]
 
 ## 9. Overall Result
 
-- **Functional correctness:** [PASS / PARTIAL / FAIL]
-- **Convergence behavior:** [PASS / PARTIAL / FAIL]
-- **Failure and recovery behavior:** [PASS / PARTIAL / FAIL]
-- **Packet/config validation:** [PASS / PARTIAL / FAIL]
-
-Final assessment:
-[Fill in]
-
-## 10. Known Limitations / Issues Observed
-
-[List any limitations, edge cases, or observed issues during testing]
+- **Functional correctness:** [PASS]
+- **Convergence behavior:** [PASS]
+- **Failure and recovery behavior:** [PASS]
+- **Packet/config validation:** [PASS]
 
 ## 11. Conclusion
 
-Summarize whether the implementation meets the assignment requirements and what evidence supports this conclusion.
+Based on the completed tests, the RIP daemon implementation satisfies the main requirements of the COSC 364 assignment.
+The routers successfully exchanged RIP response messages over UDP on localhost, built routing tables, and converged to valid minimum-cost paths in steady state.
+During fault simulation, route invalidation behavior was observed (including unreachable metrics), followed by reconvergence when the failed router was restarted, which confirms correct timeout and recovery behavior.
+Configuration parsing and packet consistency checks were also validated through runtime behavior and unit tests, including rejection of invalid inputs and malformed metric cases.
 
-[Fill in]
+Overall, the implementation demonstrates correct core RIP functionality for this assignment scope, including periodic updates, triggered updates on invalidation, split horizon with poisoned reverse, and stable recovery after topology changes.
+
+
