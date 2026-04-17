@@ -230,9 +230,9 @@ The tests were performed in two ways:
 
 | Test Module | Description | Result |
 |---|---|---|
-| `tests/test_config.py` | Config parsing and validation | [PASS/FAIL] |
-| `tests/test_packet.py` | RIP packet encode/decode checks | [PASS/FAIL] |
-| `tests/test_router_logic.py` | Split horizon poisoned reverse logic | [PASS/FAIL] |
+| `tests/test_config.py` | Config parsing and validation | [PASS] |
+| `tests/test_packet.py` | RIP packet encode/decode checks | [PASS] |
+| `tests/test_router_logic.py` | Split horizon poisoned reverse logic | [PASS] |
 
 
 ## 9. Overall Result
