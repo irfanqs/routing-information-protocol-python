@@ -52,6 +52,9 @@ def main() -> int:
         "r2": launch_router("r2.conf"),
         "r3": launch_router("r3.conf"),
         "r4": launch_router("r4.conf"),
+        "r5": launch_router("r5.conf"),
+        "r6": launch_router("r6.conf"),
+        "r7": launch_router("r7.conf"),
     }
 
     try:
